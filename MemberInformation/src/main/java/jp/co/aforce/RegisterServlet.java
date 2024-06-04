@@ -43,9 +43,8 @@ public class RegisterServlet extends HttpServlet {
         
         if (!password.equals(confirmPassword)) {
             session.setAttribute("passwordMismatchError", "パスワードが一致しません");
-            session.removeAttribute("emailMismatchError"); // 移除可能存在的其他错误消息
-            session.removeAttribute("identityExistsError"); // 移除可能存在的其他错误消息
-            response.sendRedirect("views/register.jsp");
+            session.removeAttribute("emailMismatchError"); 
+            session.removeAttribute("identityExistsError"); 
             return;
         } else {
             session.removeAttribute("passwordMismatchError"); 
@@ -53,8 +52,8 @@ public class RegisterServlet extends HttpServlet {
 
         if (!email.equals(confirmEmail)) {
             session.setAttribute("emailMismatchError", "メールアドレスが一致しません");
-            session.removeAttribute("passwordMismatchError"); // 移除可能存在的其他错误消息
-            session.removeAttribute("identityExistsError"); // 移除可能存在的其他错误消息
+            session.removeAttribute("passwordMismatchError"); 
+            session.removeAttribute("identityExistsError"); 
             response.sendRedirect("views/register.jsp");
             return;
         } else {
@@ -66,8 +65,8 @@ public class RegisterServlet extends HttpServlet {
         try {
             if (dao.checkExistence(identity)) {
                 session.setAttribute("identityExistsError", "このログイン名は既に使用されています");
-                session.removeAttribute("passwordMismatchError"); // 移除可能存在的其他错误消息
-                session.removeAttribute("emailMismatchError"); // 移除可能存在的其他错误消息
+                session.removeAttribute("passwordMismatchError"); 
+                session.removeAttribute("emailMismatchError"); 
                 response.sendRedirect("views/register.jsp");
                 return;
             } else {

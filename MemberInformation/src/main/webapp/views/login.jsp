@@ -21,8 +21,8 @@
                          
                       </ul>
             </li>
-            <li><a href="hobby.html">CART</a></li>
-            <li><a href="experience.html">NEWS</a></li>
+            <li><a href="cart.jsp">CART</a></li>
+            <li><a href="news.jsp">NEWS</a></li>
             
         </ul>
         </nav>

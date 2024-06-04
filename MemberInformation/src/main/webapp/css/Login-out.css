@@ -5,15 +5,15 @@ body, html {
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/bg.jpg');
-    background-size: cover; /* 使背景图覆盖整个页面 */
-    background-repeat: no-repeat; /* 防止背景图重复 */
-    background-position: center center; /* 背景图居中 */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
     font-family: Arial, sans-serif;
     color: #333;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8); /* 半透明的背景色 */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

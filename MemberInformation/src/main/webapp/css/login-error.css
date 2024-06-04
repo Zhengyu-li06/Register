@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    min-height: 100vh; /* 确保页面高度至少为视口高度 */
+    min-height: 100vh; 
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
@@ -23,6 +23,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* 确保容器高度至少为视口高度 */
+    min-height: 100vh; 
     flex-direction: column;
 }
