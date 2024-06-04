@@ -1,0 +1,18 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<html>
+<head>
+<title>Shopping</title>
+
+</head>
+<body>
+
+
+<a href="../ProductServlet">商品</a>
+<a href="../chapter25/cart.jsp">カート</a>
+<a href="../chapter25/Preview.action">購入</a>
+<a href="../chapter24/login-in.jsp">ログイン</a>
+<a href="../chapter24/logout-in.jsp">ログアウト</a>
+
+<hr>
+</body>
+</html>

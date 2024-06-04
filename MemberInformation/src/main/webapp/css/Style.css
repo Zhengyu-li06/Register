@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh; /* 确保页面高度至少为视口高度 */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/gg.jpg');
+    background-size: cover; /* 使背景图覆盖整个页面 */
+    background-repeat: no-repeat; /* 防止背景图重复 */
+    background-attachment: fixed; /* 背景图固定，滚动时不动 */
+    background-position: center center; /* 背景图居中 */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 确保容器高度至少为视口高度 */
+    flex-direction: column;
+}
+
+form {
+    max-width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="submit"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Josefin Slab', serif;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Josefin Slab', serif;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
